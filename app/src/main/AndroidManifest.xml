@@ -27,9 +27,7 @@
         <activity
             android:name=".onboarding2"
             android:exported="false" />
-        <activity
-            android:name=".onboarding1"
-            android:exported="false" />
+
         <activity
             android:name=".bemvindo"
             android:exported="false" />

@@ -10,9 +10,9 @@ class onboarding3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding3)
 
-        val butaovamosla = findViewById<Button>(R.id.button)
+        val botaovamosla = findViewById<Button>(R.id.button)
 
-        butaovamosla.setOnClickListener {
+        botaovamosla.setOnClickListener {
             irparahome()
 
     }}
