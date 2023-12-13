@@ -18,7 +18,7 @@ class login1 : AppCompatActivity() {
     }
 
     private fun pularParaAcesso() {
-        val intent = Intent (this, pularParaAcesso()::class.java)
+        val intent = Intent (this, acesso()::class.java)
         startActivity(intent)
     }
 
