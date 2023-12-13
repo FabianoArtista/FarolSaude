@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/botaoindiferente" />
+        app:srcCompat="@drawable/botaoindiferente"
+        android:contentDescription="@string/robo4" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -29,7 +30,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/botaotriste" />
+        app:srcCompat="@drawable/botaotriste"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/robo1" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -41,7 +44,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/botaoraiva" />
+        app:srcCompat="@drawable/botaoraiva"
+        android:contentDescription="@string/robo3" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -52,7 +56,8 @@
         app:layout_constraintHorizontal_bias="0.923"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/botaocurado" />
+        app:srcCompat="@drawable/botaocurado"
+        android:contentDescription="@string/robo6" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -64,7 +69,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/botaofeliz" />
+        app:srcCompat="@drawable/botaofeliz"
+        tools:ignore="ImageContrastCheck"
+        android:contentDescription="@string/robo5" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
@@ -86,6 +93,7 @@ você conversar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="0.254"
+        tools:ignore="TextSizeCheck"
         tools:textColor="@color/black"
         tools:textSize="15dp" />
 
@@ -93,7 +101,7 @@ você conversar"
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inciar Conversa"
+        android:text="@string/inciar_conversa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.094"
@@ -111,7 +119,8 @@ você conversar"
         android:contentDescription="@string/app_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/aureola" />
+        app:srcCompat="@drawable/aureola"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -137,7 +146,8 @@ você conversar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
         app:layout_constraintVertical_bias="0.106"
-        app:srcCompat="@drawable/guardiaodavida" />
+        app:srcCompat="@drawable/guardiaodavida"
+        android:contentDescription="@string/texto" />
 
     <ImageView
         android:id="@+id/botaohome"
@@ -149,7 +159,8 @@ você conversar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/inicio" />
+        app:srcCompat="@drawable/inicio"
+        android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/botaorobo"
@@ -161,7 +172,8 @@ você conversar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/android" />
+        app:srcCompat="@drawable/android"
+        android:contentDescription="@string/robo" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -173,7 +185,8 @@ você conversar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/sino" />
+        app:srcCompat="@drawable/sino"
+        android:contentDescription="@string/texto1" />
 
     <ImageView
         android:id="@+id/imageView10"
@@ -185,7 +198,8 @@ você conversar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6"
         app:layout_constraintVertical_bias="0.5"
-        app:srcCompat="@drawable/menu" />
+        app:srcCompat="@drawable/menu"
+        android:contentDescription="@string/robo2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

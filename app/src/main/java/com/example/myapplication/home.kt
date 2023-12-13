@@ -1,9 +1,11 @@
 package com.example.myapplication
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 
 class home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,12 +13,13 @@ class home : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         class iniciarconversa : AppCompatActivity() {
+            @SuppressLint("WrongViewCast")
             override fun onCreate(savedInstanceState: Bundle?) {
                 super.onCreate(savedInstanceState)
                 setContentView(R.layout.activity_home)
 
 
-                val guardiaodavida = findViewById<Button>(R.id.button)
+                val guardiaodavida = findViewById<ImageView>(R.id.botaohome)
 
                 guardiaodavida.setOnClickListener {
                     botaoinicio()
@@ -25,23 +28,21 @@ class home : AppCompatActivity() {
             }
 
             private fun botaoinicio() {
-                val login1= Intent (this, inicio::class.java)
+                val login1= Intent (this, login1::class.java)
                 startActivity(login1)
 
-                class botaoinicio : AppCompatActivity() {
-                    override fun onCreate(savedInstanceState: Bundle?) {
-                        super.onCreate(savedInstanceState)
-                        setContentView(R.layout.login1)
 
-                        val inicio = findViewById<Button>(R.id.button)
+                        val butaoinicio = findViewById<Button>(R.id.button)
 
                         butaoinicio.setOnClickListener {
                             login()
 
                         }}
-                    private fun botaoinicio() {
-                        val acesso = Intent (this, login::class.java)
-                        startActivity(login)
+                    private fun login() {
+                        val acesso = Intent (this, login1::class.java)
+                        startActivity(acesso)
 
     }
 }
+            }
+        }

@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="vamos_l">Vamos lá</string>
+    <string name="todo">TODO</string>
+    <string name="robo">TODO</string>
+    <string name="inciar_conversa">Inciar Conversa</string>
+    <string name="robo1">TODO</string>
+    <string name="robo2">TODO</string>
+    <string name="robo3">TODO</string>
+    <string name="robo4">TODO</string>
+    <string name="robo5">TODO</string>
+    <string name="robo6">TODO</string>
+    <string name="texto">TODO</string>
+    <string name="texto1">TODO</string>
+    <string name="missingconstrains">missingconstrains</string>
 </resources>

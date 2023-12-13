@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="acesso"
-    tools:context=".acesso"
-    tools:ignore="ExtraText">
+    tools:context=".acesso">
 
     <ImageView
         android:id="@+id/botaovoltar"
@@ -24,13 +23,14 @@
         android:id="@+id/etUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:ems="10"
-        android:hint="Nome de Usuário"
+        android:hint="@string/missingconstrains"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="150dp,MissingConstraints"
         tools:layout_editor_absoluteY="138dp" />
 
     <TextView
@@ -41,20 +41,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="102dp" />
+        tools:layout_editor_absoluteY="102dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/etSenha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/etUsuario"
-        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="181dp" />
 
     <TextView
@@ -65,7 +67,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="236dp" />
+        tools:layout_editor_absoluteY="236dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button6"
@@ -75,7 +78,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="290dp" />
+        tools:layout_editor_absoluteY="290dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView7"
@@ -85,7 +89,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="362dp" />
+        tools:layout_editor_absoluteY="362dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -95,17 +100,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logincomgoogle"
-        tools:layout_editor_absoluteY="384dp" />
-
-    class acesso : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-    super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_acesso)
+        tools:layout_editor_absoluteY="384dp"
+        tools:ignore="MissingConstraints" />
 
 
-    }
-    }
-    private fun botaovoltar() {
-    val botaovoltar = Intent(this, login1::class.java)
-    startActivity(login1)
 </androidx.constraintlayout.widget.ConstraintLayout>
