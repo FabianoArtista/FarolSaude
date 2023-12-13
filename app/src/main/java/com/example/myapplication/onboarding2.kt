@@ -10,14 +10,14 @@ class onboarding2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding2)
 
-        val botaopular = findViewById<Button>(R.id.button)
+        val botaopular = findViewById<Button>(R.id.button7)
 
         botaopular.setOnClickListener {
             irparaonboarding3()
 
         }}
     private fun irparaonboarding3() {
-        val intent = Intent (this, home::class.java)
+        val intent = Intent (this, onboarding3::class.java)
         startActivity(intent)
     }
 }

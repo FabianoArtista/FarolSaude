@@ -10,7 +10,7 @@ class login1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login1)
 
-        val acessarminhaconta = findViewById<Button>(R.id.button)
+        val acessarminhaconta = findViewById<Button>(R.id.button4)
 
        acessarminhaconta.setOnClickListener {
             pularParaAcesso()
@@ -18,11 +18,8 @@ class login1 : AppCompatActivity() {
     }
 
     private fun pularParaAcesso() {
-        TODO("Not yet implemented")
-    }
-
-    private fun acessarminhaconta() {
         val intent = Intent (this, pularParaAcesso()::class.java)
         startActivity(intent)
     }
-}
+
+        }
